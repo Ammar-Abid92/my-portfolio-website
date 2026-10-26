@@ -14,7 +14,7 @@ const Footer = () => {
         className={`${styles.paddingX} w-full flex flex-col items-center py-5  z-20 mt-20 border-t`}
       >
         <p className="text-white text-[18px] font-bold cursor-pointer">
-          &copy; 2023 - Muhammad Ammar Abid
+          &copy; {new Date().getFullYear()} - Muhammad Ammar Abid
         </p>
         <div className="flex gap-4 items-center pt-4">
           <a href="https://github.com/Ammar-Abid92" target="_blank">

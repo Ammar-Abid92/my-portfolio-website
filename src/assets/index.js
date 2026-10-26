@@ -20,9 +20,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.svg";
+import nextjs from "./tech/nextdotjs.svg";
+import postgresql from "./tech/postgresql.svg";
+import langchain from "./tech/langchain.svg";
+import ai from "./ai.svg";
 import posIcon from "./company/oscarLogo.svg"
 import udhaarIcon from "./company/Udhaar.svg"
 import tokoIcon from "./company/logo_toko.svg"
+import ebleIcon from "./company/eble.png";
+import koderlabsIcon from "./company/koderlabs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -58,6 +65,11 @@ export {
   tailwind,
   typescript,
   threejs,
+  python,
+  nextjs,
+  postgresql,
+  langchain,
+  ai,
   meta,
   shopify,
   starbucks,
@@ -70,5 +82,7 @@ export {
   pos,
   posIcon,
   udhaarIcon,
-  tokoIcon
+  tokoIcon,
+  ebleIcon,
+  koderlabsIcon,
 };

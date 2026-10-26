@@ -29,6 +29,13 @@ import {
   threejs,
   tokoIcon,
   udhaarIcon,
+  python,
+  nextjs,
+  postgresql,
+  langchain,
+  ai,
+  ebleIcon,
+  koderlabsIcon,
 } from "../assets";
 
 export const navLinks = [
@@ -39,6 +46,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -56,6 +67,10 @@ const services = [
     icon: mobile,
   },
   {
+    title: "AI Engineer",
+    icon: ai,
+  },
+  {
     title: "Backend Developer",
     icon: backend,
   },
@@ -66,14 +81,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -87,24 +94,32 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "LangChain",
+    icon: langchain,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "git",
@@ -118,45 +133,104 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full-stack Developer",
-    company_name: "Udhaar Book",
-    icon: udhaarIcon,
-    iconBg: "#383E56",
-    date: "April 2022 - Present",
+    title: "Senior Software Engineer",
+    company_name: "E-BLE · Qatar (Remote)",
+    icon: ebleIcon,
+    iconBg: "#E6DEDD",
+    date: "July 2024 - Present",
     points: [
+      "Working as a Mobile App and AI Engineer on E-BLE, a large-scale B2B app for iOS and Android.",
+      "Built a RAG system with Pinecone vector DB to power context-aware AI features.",
+      "Developed react-native-sip-smooth, a custom React Native package that enables in-app VoIP calling through Linphone SIP.",
+      "Built a Next.js Web SDK for AHOY Maps.",
+    ],
+  },
+  {
+    title: "Mobile Software Engineer",
+    company_name: "Koderlabs · Karachi",
+    icon: koderlabsIcon,
+    iconBg: "#E6DEDD",
+    date: "January 2024 - July 2024",
+    points: [
+      "Developed and optimized cross-platform mobile and web apps across Ride-Hailing, B2B, FinTech, HR and Fitness domains using React, React Native, TypeScript and REST APIs.",
+      "Built key features like real-time GPS tracking, advanced search, financial reporting, visa workflows and health tracking.",
+      "Ensured smooth, consistent performance across iOS and Android while improving scalability and user engagement.",
+    ],
+  },
+  {
+    title: "Full-stack Developer",
+    company_name: "Udhaar Book · Market IQ",
+    icon: udhaarIcon,
+    iconBg: "#E6DEDD",
+    date: "April 2022 - December 2023",
+    points: [
+      "Developed and maintained Udhaar Book, a React Native B2B fintech app that now has 3.5M active users.",
       "Developed back-end and front-end of many core features in the app like Vouchers, Group payments, background and foreground notifications.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality features.",
       "Set up back-end and front-end syncing of the application and optimized performance using Redis database.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Integrated AWS S3 bucket with the back-end to store files and images for quick access."
+      "Integrated AWS S3 bucket with the back-end to store files and images for quick access.",
+      "Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality features.",
     ],
   },
   {
     title: "React / React Native Developer",
-    company_name: "Toko.pk",
+    company_name: "Toko.pk · Market IQ",
     icon: tokoIcon,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "November 2021 - April 2022",
     points: [
-      "Developing and maintaining Toko mobile and web application using React.js, React-Native and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Developed and maintained the Toko marketplace mobile and web application using React.js, React-Native and other related technologies.",
       "Worked on building cart functionality for the Toko marketplace mobile and web application.",
-      "Integrated customized store creation for the merchant on the mobile application."
+      "Integrated customized store creation for the merchant on the mobile application.",
+      "Implemented responsive design and ensured cross-browser compatibility.",
     ],
   },
   {
-    title: "Backend Developer",
-    company_name: "Oscar.pk",
+    title: "Full-stack Developer",
+    company_name: "Oscar ERP · Market IQ",
     icon: posIcon,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "May 2021 - November 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed multiple modules of Oscar ERP, used by 250+ B2B clients, including POS, Inventory and Sales.",
+      "Built features on the Python Odoo framework on the back-end and React.js on the front-end.",
+      "Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Participated in code reviews and provided constructive feedback to other developers.",
     ],
   },
+];
+
+const education = [
+  {
+    degree: "Masters in Artificial Intelligence",
+    institute: "NED University",
+    result: "CGPA: 3.72 (in progress)",
+  },
+  {
+    degree: "Bachelors in Software Engineering",
+    institute: "NED University",
+    result: "CGPA: 3.63",
+  },
+  {
+    degree: "Intermediate",
+    institute: "Adamjee Science College",
+    result: "Grade A-1 (90.1%, 13th rank)",
+  },
+];
+
+const achievements = [
+  "7th rank in Google Kickstart competitive programming competition.",
+  "Won SENTEC speed programming competition.",
+  "Won Koderz-Kombat problem solving competition by IEEE Iconics.",
+  "Served 1 year as Technical Lead of Google DSC NED-UET.",
+];
+
+const certifications = [
+  "Microsoft MTA-98-381 Certified Python Programmer",
+  "NED Agentic-AI Engineer certificate",
+  "Expertizo MERN stack development certificate",
+  "Coursera Intro to AI and Data Sciences certificate",
+  "Google Kickstart & Codejam competition certificate",
+  "LinkedIn MongoDB and REST APIs certificate",
 ];
 
 const testimonials = [
@@ -188,25 +262,105 @@ const testimonials = [
 
 const projects = [
   {
-    name: "ERP SaaS",
+    name: "E-BLE AI Assistant",
     description:
-      "Web-based progressive web application that allows businesses to use Point of sale, Inventory management, and manage their sales.",
+      "A RAG system built into E-BLE, a large-scale B2B app for iOS and Android. It uses Pinecone vector DB to give the app context-aware AI features.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RAG",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pinecone",
+        color: "pink-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "react-native-sip-smooth",
+    description:
+      "A custom React Native package that enables in-app VoIP calling through Linphone SIP on iOS and Android.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "VoIP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "linphone-SIP",
+        color: "pink-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "AHOY Maps Web SDK",
+    description:
+      "A Next.js Web SDK for AHOY Maps that lets web applications integrate AHOY's mapping features.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "maps",
+        color: "pink-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "Udhaar Book",
+    description:
+      "B2B fintech mobile app with 3.5M active users. Built core features like Vouchers, Group payments and notifications, with Redis-backed syncing and AWS S3 storage.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "pink-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "Oscar ERP",
+    description:
+      "Web-based ERP used by 250+ B2B clients that lets businesses run Point of sale, Inventory management, and manage their sales.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "postgreSQL",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "mongo DB",
+        name: "python",
         color: "green-text-gradient",
       },
       {
-        name: "Django",
+        name: "odoo",
         color: "pink-text-gradient",
+      },
+      {
+        name: "postgreSQL",
+        color: "orange-text-gradient",
       },
     ],
     image: pos,
@@ -256,4 +410,13 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  education,
+  achievements,
+  certifications,
+  testimonials,
+  projects,
+};

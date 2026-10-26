@@ -47,11 +47,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, Express.js and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a Senior Software Engineer with 5+ years of experience building web
+        and mobile applications in React, React Native, JavaScript and
+        TypeScript, including a B2B fintech app serving 3.5M active users. I've
+        worked across fintech, ride-hailing, e-commerce and B2B products, and
+        I'm growing my AI engineering expertise in LLMs, RAG, Agentic AI and
+        LangChain. I enjoy shipping polished, scalable cross-platform apps with
+        practical AI features. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
